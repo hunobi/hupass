@@ -1,0 +1,9 @@
+{
+  "short_name": "HuPass",
+  "homepage": ".",
+  "name": "Password manager",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#fff",
+  "background_color": "#000"
+}

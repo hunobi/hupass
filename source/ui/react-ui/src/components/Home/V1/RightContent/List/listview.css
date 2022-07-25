@@ -1,0 +1,123 @@
+.listview-container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.listview-container-label{
+    background-color: rgb(37, 37, 37);
+    padding: 10px;
+    display: flex;
+    text-align: center;
+}
+
+.listview-container-label-dbname{
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+    color: rgb(188, 188, 188);
+}
+
+.listview-container-label-dbaccess{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    color: rgb(188, 188, 188);
+}
+
+.listview-container-content{
+    display: flex;
+    height: 100%;
+    width: 90vw;
+    overflow-y:auto;
+    flex-direction: column;
+}
+
+.listview-element-container{
+    display: flex;
+    font-size: 12px;
+    width: 100%;
+    height: 10%;
+    align-items: center;   
+}
+
+.listview-element-container:hover{
+    background-color: #3e4045;
+}
+
+.listview-element-container-name{
+    margin: 10px;
+    width: 33%;
+    text-align: center;
+    overflow: hidden;
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+}
+
+.listview-element-container-name span{
+    color: rgb(205, 205, 205);
+}
+
+.listview-element-container-url span{
+    color: #61dafb;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.listview-element-container-url span:hover{
+    color: #7ce1fd;
+}
+
+.listview-element-container-url{
+    margin: 10px;
+    width: 33%;
+    text-align: center;
+    overflow: hidden;
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+}
+
+.listview-element-container-operations{
+    display: flex;
+    width: 33%;
+    justify-content: center;
+    margin: 1%;
+}
+
+.listview-element-container-operations img{
+    width: 32px;
+    height: 32px;
+    margin-left: 5%;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+.listview-element-container-operations img:hover{
+    transform: rotate(-10deg);
+    transition: 0.8s;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(80, 80, 80); 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #939393; 
+}

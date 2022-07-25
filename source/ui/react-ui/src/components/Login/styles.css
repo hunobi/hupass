@@ -1,0 +1,126 @@
+.auth-container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.auth-container-title{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    margin-bottom: 2%;
+}
+
+.auth-container-title span{
+    font-size: 32px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 2px rgb(123, 123, 122);
+}
+
+.auth-container-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.auth-container-form-label{
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+.auth-container-form-label span{
+    background-color: rgb(78, 75, 70);
+    padding: 2%;
+    width: 70%;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.auth-container-form-input{
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+.auth-container-form-input input
+{
+    width: 50%;
+    border-radius: 25px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 24px;
+    background-color: #717784;
+    border: 1px solid #717784;
+    text-align: center;
+}
+
+.auth-container-form-input input:focus{
+   border: 1px solid black;
+   outline: none;
+
+}
+
+.auth-container-form-input input:focus::placeholder{
+    color:transparent;
+}
+
+.auth-container-form-input input::placeholder{
+    color: rgb(230, 230, 230);
+    font-size: 16px;
+    text-align: start;
+}
+
+.auth-container-form-submit{
+    display: flex;
+    justify-content: center;
+}
+
+.auth-container-form-submit button{
+    width: 20%;
+    margin-top: 5%;
+    padding: 2%;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 3px solid;
+    background-color: #282c34;
+    color: #24ad8e;
+    border-color: #24ad8e;
+    font-size: 24px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.auth-container-form-submit button:hover{
+    background-color: #373c47;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+      border: 2px red solid;
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+      border: 2px red solid;
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+      border: 2px red solid;
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+      border: 2px red solid;
+    }
+  }

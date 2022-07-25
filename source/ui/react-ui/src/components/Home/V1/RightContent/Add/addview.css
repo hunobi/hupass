@@ -1,0 +1,152 @@
+.addview-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.addview-container-label{
+    background-color: rgb(37, 37, 37);
+    padding: 10px;
+    display: flex;
+    text-align: center;
+}
+
+.addview-container-label-dbname{
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+    color: rgb(188, 188, 188);
+}
+
+.addview-container-label-view{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    color: rgb(188, 188, 188);
+}
+
+.addview-container-content{
+    display: flex;
+    height: 100%;
+    width: 90vw;
+    overflow-y:auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.addview-container-content-element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.addview-container-content-element label{
+    width: 60%;
+    margin: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(0, 255, 255, 0.667);
+}
+
+.addview-container-content-element input{
+    width: 60%;
+    border: 2px solid rgb(149, 149, 149);
+    padding: 10px;
+    padding-left: 20px;
+    background-color: transparent;
+    border-radius: 30px;
+    color: rgba(240, 248, 255, 0.818);
+    font-size: large;
+}
+
+::-ms-reveal {
+    display:block;
+}
+
+.addview-container-content-element input::placeholder{
+    color:rgba(240, 248, 255, 0.426);
+
+}
+
+
+.addview-container-content-element img {
+    
+    width: 50px;
+    height: 50px;
+    margin-top: 6px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.addview-container-content-element img:hover{
+    animation: random-animation 1s infinite;
+
+}
+
+@keyframes random-animation {
+    25% {transform: rotate(20deg)}
+    75% {transform: rotate(-20deg)}
+}
+
+.addview-container-content-element input:focus{
+    outline: none;
+}
+
+.addview-container-content-element textarea{
+    max-width: 60%;
+    min-width: 60%;
+    height: 20vh;
+    resize: none;
+    background-color: transparent;
+    color: rgba(240, 248, 255, 0.818);
+    padding: 5px;
+}
+
+.addview-container-content-element textarea:focus{
+    outline: none;
+}
+
+.addview-container-content-element button{
+    border-radius: 30px;
+    cursor: pointer;
+    border: 2px solid greenyellow;
+    color: greenyellow;
+    background-color: transparent;
+    min-width: 150px;
+    padding: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.addview-container-content-element button:hover{
+    background-color: rgb(25, 25, 25);
+    transition: 1s;
+}
+
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+      border: 2px red solid;
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+      border: 2px red solid;
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+      border: 2px red solid;
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+      border: 2px red solid;
+    }
+  }

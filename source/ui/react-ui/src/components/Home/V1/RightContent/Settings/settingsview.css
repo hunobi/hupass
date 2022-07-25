@@ -1,0 +1,171 @@
+.settingsview-container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.settingsview-container-label{
+    background-color: rgb(37, 37, 37);
+    padding: 10px;
+    display: flex;
+    text-align: center;
+}
+
+.settingsview-container-label-dbname{
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+    color: rgb(188, 188, 188);
+}
+
+.settingsview-container-label-view{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    color: rgb(188, 188, 188);
+}
+
+.settingsview-container-content{
+    display: flex;
+    height: 100%;
+    width: 90vw;
+    overflow-y:auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.settingsview-container-content-labels{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    align-items: flex-end;
+}
+
+.settingsview-container-content-labels-element{
+    height: 10%;
+}
+
+.settingsview-container-content-controls{
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid rgb(106, 106, 106);
+    margin: 5%;
+    padding-left: 10%;
+    height: 60%;
+    align-items: center;
+}
+
+.settingsview-container-content-controls-dbversion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.red{
+    color: rgb(220, 0, 0);
+}
+
+.green{
+    color: rgb(0, 220, 0);
+}
+
+.settingsview-container-content-controls-dbversion-label{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.settingsview-container-content-controls-submit{
+    text-align: center;
+}
+
+.settingsview-container-content-controls-submit button{
+    border-radius: 30px;
+    cursor: pointer;
+    border: 2px solid greenyellow;
+    color: greenyellow;
+    background-color: transparent;
+    min-width: 150px;
+    padding: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+}
+
+.settingsview-container-content-controls-submit button:hover{
+    background-color: rgb(25, 25, 25);
+    transition: 1s;
+}
+
+.settingsview-container-content-controls-submit button:disabled{
+    border: 2px solid rgb(207, 207, 207);
+    color: rgb(207, 207, 207);
+    cursor:auto;
+}
+
+.settingsview-container-content-controls-submit button:disabled:hover{
+    background-color: transparent;
+}
+
+.settingsview-container-content-controls-submit button:disabled:active{
+    transform: none;
+}
+
+.settingsview-container-content-controls-submit button:active{
+    transition: 0.2s;
+    transform: scale(0.9);
+}
+
+.settingsview-container-content-controls-changepswd{
+    margin-top: 8%;
+    min-width: 300px;
+}
+
+.settingsview-container-content-controls-changepswd-input{
+    margin-bottom: 5%;
+}
+
+.settingsview-container-content-controls-changepswd-input input{
+    border-radius: 10px;
+    border: 2px solid rgb(108, 108, 108);
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(204, 204, 204);
+    width: 95%;
+    font-size: large;
+}
+
+.settingsview-container-content-controls-changepswd-input input::placeholder{
+    color: rgba(0, 0, 0, 0.691);
+    font-size: medium;
+}
+
+.settingsview-container-content-controls-changepswd-input input:focus{
+    outline: none;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+      border: 2px red solid;
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+      border: 2px red solid;
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+      border: 2px red solid;
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+      border: 2px red solid;
+    }
+  }
