@@ -1,4 +1,4 @@
-import webview, time, os
+import webview, time
 import modules.db as db
 import modules.cryptos as crypto
 
@@ -22,11 +22,7 @@ class Api:
                 self.update_database(self.db)
                 return True
             return False
-        
-        elif cmd == "set_clipboard":
-            data = args['data']
-            os.system('echo | set /p nul="' + data + '"| clip')
-        
+          
         elif cmd == "generate_password":
             return crypto.random_string()
 

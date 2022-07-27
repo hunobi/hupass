@@ -15,7 +15,12 @@ const ListViewElement = (props) => {
     }
 
     const copyData = async (data) =>{
-        await window.pywebview.api.command("set_clipboard",{data:data});
+        const element = document.createElement('input');
+        element.style.display='none';
+        element.value=data;
+        element.select();
+        element.setSelectionRange(0, data.length);
+        navigator.clipboard.writeText(element.value);
     }
 
     return (
